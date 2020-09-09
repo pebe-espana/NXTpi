@@ -6,4 +6,4 @@ Benefits:
 - adding the processing power of a Raspberry Pi to add modern sensors, communication and multi-tasking
 - exploiting availability of powerful Python libraries on a Raspberry Pi
 - allowing long-range communication with mobile platform via WiFi intranet from GUI on a laptop
-- an dlearn what such frameworks as ROS are al about!
+- ... and learn what such frameworks as ROS are all about!
