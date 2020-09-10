@@ -1,4 +1,6 @@
-# NXTpi
+## NXTpi - a lifelong learning journey
+
+### Mission
 How to inject new life into a LEGO robot built on NXT-brick basis, by upgrading its control and communication with a Rasberry Pi as companion.
 Benefits:
 - simplicity and flexibility of mechanical construction offered by LEGO components
