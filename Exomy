@@ -1,3 +1,12 @@
 Case study: How about extending the ESA ExoMy rover with NXT?
 
-Simple example to test methods and ways forward could be to add Compass sensor info to the Exomy. 
+Simple example to test methods and ways forward could be to add Compass sensor info to the Exomy.
+
+  Reference to ExoMy: see esa-prl/ExoMy 
+  
+  Issues to solve and possible solutions:
+  1) NXT runs LeJos Java as a flexible programming solution. possible communication to the NXT from other platforms could be
+    USB - only solution found is if the counterpart (=Pi) runs also LeJos Java environment => but failed miserably in installation of it on a Raspi
+    Bluetooth - apart from LeJos on Raspi found it possible to learn from NXTpy libraries and Bluez Tutorial how to write a Client server connection to NXT in Python. Disadvantage is the latency introduced by Bluetooth link.
+    I2C - could be a backup solution, hardware description available "Extreme NXT" book, and a project on controlling Lego sensors with Arduino on web.
+    
