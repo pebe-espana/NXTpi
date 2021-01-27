@@ -18,8 +18,13 @@ Benefits:
 - Mindsensor CMPS-Nx, NXTCam
 - Raspberry Pi with MakerHawk UPS, Bluetooth and wifi dongle
 
+active robot platform: ExoMy Rover (see https://github.com/esa-prl/ExoMy)
+
+- Raspberry Pi 4
+- NXT brick with CMPS-Nx, Ultrasound sensor
+
 #### Software
 
 - LeJos
-- Java8
+- Java8 and later
 - Python3
