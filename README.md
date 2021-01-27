@@ -19,9 +19,10 @@ Benefits:
 - Raspberry Pi with MakerHawk UPS, Bluetooth and wifi dongle
 
 active robot platform: ExoMy Rover (see https://github.com/esa-prl/ExoMy)
+plus additions of this ExoMy branch of NXTpi
 
-- Raspberry Pi 4
-- NXT brick with CMPS-Nx, Ultrasound sensor
+- Raspberry Pi 4 (control with ROS melodic in docker container)
+- NXT brick with CMPS-Nx, Ultrasound sensor (connected via Bluetooth to Pi using roslibpy to connect to ROS container)
 
 #### Software
 
