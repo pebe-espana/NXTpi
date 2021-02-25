@@ -68,7 +68,6 @@ add_service_files(
 ## Generate actions in the 'action' folder
 add_action_files(
       FILES
-      CommandRover.action
       PilotExomy.action
 )
 #   Action1.action
