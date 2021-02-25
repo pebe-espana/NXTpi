@@ -1,0 +1,6 @@
+string mode
+int64 vel
+int64 deg
+int64 dur
+---
+string outcome

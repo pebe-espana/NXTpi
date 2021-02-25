@@ -1,0 +1,12 @@
+# Goal
+string mode
+int64 vel
+int64 deg
+int64 dur
+---
+# Result
+string diag
+---
+# Feedback
+int64 cycl
+string diag
