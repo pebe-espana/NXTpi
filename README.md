@@ -1,6 +1,6 @@
 ## Exomy Additions to the ESA ExoMy_Software folder (to be part of docker container)
 
-## Pilot = text based piloting functionalty (additional existing methods of using webinterface or joystick)
+## Pilot = text based piloting functionality (additional existing methods of using webinterface or joystick)
 
 Add and replace files in the respective folders of ESA ExoMy_Software
 
