@@ -1,31 +1,9 @@
-## NXTpi - a lifelong learning journey
+## Exomy Additions to the ESA ExoMy_Software folder (to be part of docker container)
 
-### Mission
-How to inject new life into a LEGO robot built on NXT-brick basis, by upgrading its control and communication with a Rasberry Pi as companion.
-Benefits:
-- simplicity and flexibility of mechanical construction offered by LEGO components for easy prototyping
-- the power of LeJos in controlling motion of a proven basic mobile platform
-- adding the processing power of a Raspberry Pi to add modern sensors, communication and multi-tasking possibilities
-- exploiting availability of powerful Python libraries on a Raspberry Pi
-- allowing long-range two-way communication with mobile platform via WiFi intranet from a GUI on a laptop
-- ... and in the process learn what such frameworks as ROS are all about!
+Add and replace files in the respective folders
+Note:
+motor_node & robot_node : only changed the rate from 10Hz to 20Hz to get better motion resolution 
+config.xml - no need to replace - use your own to fit the hardware
 
-### Toolbox and components 
+more explanations to follow
 
-#### Hardware
-
-- NXT-brick
-- Mindsensor CMPS-Nx, NXTCam
-- Raspberry Pi with MakerHawk UPS, Bluetooth and wifi dongle
-
-active robot platform: ExoMy Rover (see https://github.com/esa-prl/ExoMy)
-plus additions of this ExoMy branch of NXTpi
-
-- Raspberry Pi 4 (control with ROS melodic in docker container)
-- NXT brick with CMPS-Nx, Ultrasound sensor (connected via Bluetooth to Pi using roslibpy to connect to ROS container)
-
-#### Software
-
-- LeJos
-- Java8 and later
-- Python3
