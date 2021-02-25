@@ -29,3 +29,4 @@ plus additions of this ExoMy branch of NXTpi
 - LeJos
 - Java8 and later
 - Python3
+- ROS
