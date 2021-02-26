@@ -8,7 +8,7 @@ Notes:
 
 motor_node & robot_node : only changed the rate from 10Hz to 20Hz to get better motion resolution than ESA version
 
-config folder: contains the scripted task file called "keyboard.txt", other namwes could be used but needs to be then declared in "auto_pilot.py"
+config folder: contains the scripted task file called "keyboard.txt", other names could be used but need to be then declared in "auto_pilot.py"
 
 ### Explanations
 
