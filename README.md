@@ -15,7 +15,7 @@ config folder: contains the scripted task file called "keyboard.txt", other namw
 in short:
 
 - autojoy_server.py simply publishes the same /rover_command as the joystick parser node for 'dur' cycles
-- command is given by using ros command : 'rosservice call /autojoy -- A 2 90 10' , where -- is needed to allow negative values in service call, A is Ackermann mode, 2 is the req.vel, 90 is the req.deg, and 10 is the duration req.dur in 20Hz cycles for which motors are to run
+- command is given by using ros command (requesting mode, vel, deg, dur values ): 'rosservice call /autojoy -- A 2 90 10' , where -- is needed to allow negative values in service call, A is Ackermann mode, 2 is the req.vel, 90 is the req.deg, and 10 is the duration req.dur in 20Hz cycles for which motors are to run
 
 - pilot_exomy.py is amore advanced version of this functionality using action service
 - command is given using two client versions man_pilot.py, auto_pilot.py
