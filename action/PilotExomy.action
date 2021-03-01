@@ -5,8 +5,12 @@ int64 deg
 int64 dur
 ---
 # Result
+int32 head
+int32 dist
 string diag
 ---
 # Feedback
 int64 cycl
+int32 head
+int32 dist
 string diag
