@@ -11,10 +11,23 @@
 # mode vel deg dur 
 #
 # equivalent to rosservice call /autojoy -- A 2 90 10
-# characterfield sizes for the command parameters to be passed are marked in 
+# characterfield sizes for the command parameters to be passed
 #-...-...-...  
-A  2  90   10  # equivalent to rosservice call /autojoy -- A 2 90 10
-A  20 90   5   # move at speed 20, forward for 5 cycles
-X  50  0   20   # left turn
-X  50 180  20   # right turn
-X  20 0    10
+# should have driven one square of about 26 cm side,turning left
+# then doing a repeat but turning right 4x
+A  30 90   20
+X  50 0    19
+A  30 90   20
+X  30 0    19
+A  30 90   20
+X  50 0    19
+A  30 90   20
+X  30 0    19
+A  30 90   20
+X  50 180  21
+A  30 90   20
+X  30 180  21
+A  30 90   20
+X  50 180  21
+A  30 90   20
+X  30 180  21
