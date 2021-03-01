@@ -11,7 +11,8 @@ import math
 import time
 
 # import the action server parts
-from exomy.msg import PilotExomyAction,PilotExomyFeedback
+from exomy.msg import PilotExomyAction
+from exomy.msg import PilotExomyGoal,PilotExomyFeedback
 from exomy.msg import PilotExomyResult
 from std_msgs.msg import Float32,Int32
 
@@ -43,6 +44,12 @@ class PilotExomy_ActionServer(object):
         if (goal.mode =='X'):
             self.locomotion_mode = LocomotionMode.POINT_TURN.value
         if (goal.mode =='C'):
+            self.locomotion_mode = LocomotionMode.CRABBING.value
+        if (goal.mode =='A '):
+            self.locomotion_mode = LocomotionMode.ACKERMANN.value
+        if (goal.mode =='X '):
+            self.locomotion_mode = LocomotionMode.POINT_TURN.value
+        if (goal.mode =='C '):
             self.locomotion_mode = LocomotionMode.CRABBING.value
 
         rover_cmd.locomotion_mode = self.locomotion_mode
