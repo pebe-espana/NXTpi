@@ -22,6 +22,8 @@ in short:
 - man_pilot.py can be run using 'rosrun exomy man_pilot.py' and it will ask for a string 'A 2 90 10' to be entered directly from keyboard
 - auto_pilot.py can be run using 'rosrun exomy auto_pilot.py' and it will read the file 'keyboard.txt' and run all the command lines found therein in sequence top to bottom
 
+(for an example of what the config.keyboard.txt results in see the short movie clip in documents folder)
+
 in detail: (to follow shortly)
 
 
