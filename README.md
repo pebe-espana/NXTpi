@@ -32,8 +32,8 @@ Method 2
 
 ### Forthcoming developments planned
  
-- add command parsing for direct moves/turns in m & degrees in absolute or relative (as part of this add-in branch)
-- add sensors and subsciptions to these (hardware dependent, so to be added to ExoMy branch of this repository)
+- add command parsing for direct moves/turns in m and degrees in absolute or relative terms(as part of this add-in branch)
+- add sensors and subscriptions to these (hardware dependent, so to be added to ExoMy branch of this repository)
 
 
 
