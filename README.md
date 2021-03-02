@@ -1,7 +1,7 @@
 ## NXTpi - a lifelong learning journey
 
 ![First_outing](https://github.com/pebe-espana/NXTpi/blob/master/First_outing.jpg)
-On a first outing
+<em> On a first outing </em>
 
 
 ### Branches available
