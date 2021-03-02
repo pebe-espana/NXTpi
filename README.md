@@ -1,5 +1,9 @@
 ## NXTpi - a lifelong learning journey
 
+![First_outing](https://github.com/pebe-espana/NXTpi/blob/master/First_outing.jpg)
+
+
+
 ### Branches available
 
 ExoMy = my own version of ESA ExoMy Rover (extended hardware)
