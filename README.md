@@ -12,7 +12,7 @@ config folder: contains the scripted task file called "keyboard.txt", other name
 
 ### Explanations
 
-in short:
+....in short:
 
 Method 1
 
@@ -28,8 +28,12 @@ Method 2
 
 (for an example of what the config.keyboard.txt results in see the short movie clip in documents folder of this branch)
 
-in detail: (to follow shortly)
+...in detail: (to follow shortly)
 
+### Forthcoming developments planned
+ 
+- add command parsing for direct moves/turns in m & degrees in absolute or relative (as part of this add-in branch)
+- add sensors and subsciptions to these (hardware dependent, so to be added to ExoMy branch of this repository)
 
 
 
