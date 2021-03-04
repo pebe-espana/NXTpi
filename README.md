@@ -51,14 +51,14 @@ Method 2
     > docker container list
     take note of container ID 
     > docker exec -it [the long container ID] bash
-    now you will be in a command line in side the running container
+    now you will be in a command line inside the running docker container
     > cd exomy_ws
     > source devel/setup.bash
     now you can run/query etc with ros commands, for example
     > rosnode list
     should show you the running nodes including now the services /autojoy and /pilot-exomy
     
-    control roiver now from command line
+    control rover now from command line
     
     using autojoy:
     >rosservice call /autojoy -- A 30 90 10
@@ -80,13 +80,12 @@ Method 2
     the rover should now move in a square of 26cm 
     (4 x left turns followed by another square of 4 x right turns)
     
-    
+    note that keyboard.txt is in src/exomy/config folder!
+    so the following will get you there
+    >cd ../config
+   
 ```
 ### Forthcoming developments planned
  
 - add command parsing for direct moves/turns in m and degrees in absolute or relative terms(as part of this add-in branch)
 - add sensors and subscriptions to these (hardware dependent, so to be added to ExoMy branch of this repository)
-
-
-
-
