@@ -56,7 +56,7 @@ Method 2
     > source devel/setup.bash
     now you can run/query etc with ros commands, for example
     > rosnode list
-    should show you the running nodes including now the services /autojoy and /pilot-exomy
+    should show you the running nodes including now /autojoy_server and /pilot-exomy
     
     control rover now from command line
     
