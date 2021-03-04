@@ -28,8 +28,60 @@ Method 2
 
 (for an example of what the config.keyboard.txt results in see the short movie clip in documents folder of this branch)
 
-...in detail: (to follow shortly)
+...more detail: 
 
+- overview which nodes are added to the ESA-Exomy release - see 'ExoMy Addition - Pilot.pdf' in documentation folder 
+- to add the files to the docker container:
+
+```
+    connect to Exomy with ssh 
+    > ssh pi@192.168.nnn.nnn
+    
+    copy/replace the addition files into the respective ExoMySoftware folders 
+    (e.g. transfer to Raspi using VNC connection, or samba, or copy paste in nano editor...)
+    
+    restart docker container build
+    > cd ExoMy_Software/docker
+    > sh run_exomy.sh -a
+    this starts the ROS container and rosbridge webserver
+    
+    connect to Exomy with second terminal session using ssh
+    > ssh pi@192.168.nnn.nnn
+    now find ID of running docker container and connect into it:
+    > docker container list
+    take note of container ID 
+    > docker exec -it [the long container ID] bash
+    now you will be in a command line in side the running container
+    > cd exomy_ws
+    > source devel/setup.bash
+    now you can run/query etc with ros commands, for example
+    > rosnode list
+    should show you the running nodes including now the services /autojoy and /pilot-exomy
+    
+    control roiver now from command line
+    
+    using autojoy:
+    >rosservice call /autojoy -- A 30 90 10
+    should move the rover by about 13cm forward
+    >rosservice call /autojoy -- A -30 90 40 
+    should move the rover backwards by about 54cm
+    >rosservice call /autojoy -- X 50 0 20
+    should do a left turn on the spot by about 90 degrees
+    
+    using man_pilot:
+    >rosrun exomy man-pilot 
+    will give you an entry request and expected formatting pattern (2 and 4 character sized patterns):
+     -.-...-...-... 
+    >A 30  90  10
+    
+    using auto-pilot reading commands from file keyboard.txt:
+    >cd src/exomy/src
+    >rosrun exomy auto-pilot
+    the rover should now move in a square of 26cm 
+    (4 x left turns followed by another square of 4 x right turns)
+    
+    
+```
 ### Forthcoming developments planned
  
 - add command parsing for direct moves/turns in m and degrees in absolute or relative terms(as part of this add-in branch)
