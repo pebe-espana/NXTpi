@@ -79,6 +79,7 @@ Method 2
     >rosrun exomy auto-pilot
     the rover should now move in a square of 26cm 
     (4 x left turns followed by another square of 4 x right turns)
+    after completed run stop the node with CTRL-C to get back to prompt
     
     note that keyboard.txt is in src/exomy/config folder!
     so the following will get you there
