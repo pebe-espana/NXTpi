@@ -4,6 +4,9 @@ from __future__ import print_function
 import rospy
 import actionlib
 from exomy.msg import PilotExomyAction, PilotExomyGoal
+from std_msgs.msg import Float32,Int32
+
+from parse_content import ParseContentClass
 
 config_filename = '../config/keyboard.txt'  # file with script
 
@@ -14,6 +17,8 @@ class ClientActionClass(object):
         self.client = actionlib.SimpleActionClient('pilot_exomy', PilotExomyAction)
         self.client.wait_for_server()
         goal = PilotExomyGoal()
+
+        self.parse_content_class = ParseContentClass()
 
         self.head = 0.0
         self.dist = 0.0
@@ -28,17 +33,15 @@ class ClientActionClass(object):
         file.close()
 
         self.active_line=0
-        self.true_len = last_line
+        self.true_len = 0
+        content2 = content
 
-        for k in range (0,last_line):
-            for i in range (0,last_line):
-                command = content[i]
-                if command[0] == '#' :
-                    for j in range(i,last_line-1):
-                        content[j] = content[j+1]
-                    self.true_len = self.true_len-1
+        # parse content to actual command primitives A,X,C
+        content = self.parse_content_class.parse_it(all_content=content2)
+        self.true_len = self.parse_content_class.new_len
 
-        print(content)
+        # content now contains all lines that are not comment
+        #print(content)
 
         command = content[0]
         self.content = content[0:self.true_len]
