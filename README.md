@@ -1,6 +1,6 @@
 ## NXTpi and My_ExoMy
 
-![ExomyNXT](https://github.com/pebe-espana/NXTpi/blob/ExoMy/My%20ExoMy_NXT/some_documentation/ExomyNXT.jpg)
+![ExomyNXT](https://github.com/pebe-espana/NXTpi/blob/ExoMy/My%20ExoMy_NXT/some%20documentation/ExomyNXT.jpg)
 
 this is a test version of additions to the ExoMy container - to be updated as I go along.
 Happy if you look at this branch, it works (or worked).
