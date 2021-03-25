@@ -1,41 +1,31 @@
-## NXTpi - a lifelong learning journey
+## NXTpi and My_ExoMy
 
-![First_outing](https://github.com/pebe-espana/NXTpi/blob/master/First_outing.jpg)
-<em> On a first outing </em>
+![ExomyNXT](https://github.com/pebe-espana/NXTpi/blob/ExoMy/My%20ExoMy_NXT/some_documentation/ExomyNXT.jpg)
+
+this is a test version of additions to the ExoMy container - to be updated as I go along.
+Happy if you look at this branch, it works (or worked).
+
+Current status:
+
+included driving control improvements by 0xD0M1M0 (see his ExoMy Github):
+- joystick_parser_node.py - changes sensitivity of joystick positioning
+- rover.py - changes to ackermann algorithm "A", velocity specification in crabbing "C" and point_turn modes "X"
+- webinterface improvements to be more stable (gui folder files)
+
+included my Pilot-node additions (see my branch "Additions") with improvements:
+- to run preset task scripts of pre-programmed paths (text files inconfig folder) 
+- to incorporate the NXT compass sensor data in the motion
+
+under development:
+- corrective measures to actual path programmes
+- obstacle recognition or tracking along a wall
+- more friendly GUI based interaction with ExoMy 
+
+But as it depends on my own hardware including NXT etc, it may not be that directly applicable to other ExoMy fans.
+
+More useful for immediate general use by other ESA-ExoMy enthusiasts is a look at branches of "Additional Features":
+
+ExomyAdditions - Pilot = modules added to add a text command driven pilot, should fit all users of ESA-release ExoMy_Software (ROS melodic, 1.0.3)
 
 
-### Branches available
 
-ExoMy = my own version of ESA ExoMy Rover (extended hardware)
-
-ExoMyAddition-Pilot = "Plug-in" addition to facilitate text-based piloting of ExoMy (standard ESA hardware model)
-
-### My own mission
-How to inject new life into a LEGO robot built on NXT-brick basis, by upgrading its control and communication with a Rasberry Pi as companion.
-Benefits:
-- simplicity and flexibility of mechanical construction offered by LEGO components for easy prototyping
-- the power of LeJos in controlling motion of a proven basic mobile platform
-- adding the processing power of a Raspberry Pi to add modern sensors, communication and multi-tasking possibilities
-- exploiting availability of powerful Python libraries on a Raspberry Pi
-- allowing long-range two-way communication with mobile platform via WiFi intranet from a GUI on a laptop
-- ... and in the process learn what such frameworks as ROS are all about!
-
-### Toolbox and components used
-
-#### Hardware
-
-- NXT-brick with std sensors
-- Mindsensor CMPS-Nx, NXTCam
-- Raspberry Pi with MakerHawk UPS, Bluetooth and wifi dongle
-
-active robot platform: ExoMy Rover (see https://github.com/esa-prl/ExoMy)
-
-- Raspberry Pi 4 (control with ROS melodic in docker container)
-- NXT brick with CMPS-Nx, Ultrasound sensor (connected via Bluetooth to Pi using roslibpy to connect to ROS container)
-
-#### Software
-
-- LeJos
-- Java8 and later
-- Python3
-- ROS

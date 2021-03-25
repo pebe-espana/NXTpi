@@ -1,0 +1,9 @@
+../config/point_turn_calib11.txt
+delay ON
+# this file contains available task files
+# auto_pilot uses the one at the top of this file
+# a delay can be enforced between task line with delay ON or delay OFF
+../config/squares.txt
+../config/keyboard.txt
+../config/point_turn_calib.txt
+../config/point_turn_calib2.txt

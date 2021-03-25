@@ -1,0 +1,31 @@
+# a sample file of commands to be passed to pilot
+# Author and Maintainer: pebe.espana@posteo.eu
+#
+# - to start - use the parameters as used by ESA joystick translation to motor 
+# - comment lines are allowed and identified by #
+# mode = A,X,C
+# vel = velocity in % of 100 possible (find 1-50 range useful in being linear)
+# deg = range -180 to 180
+# dur = duration in number of cycles for motors to be on
+# Format of command = pass the 4 parameters in 4 character columns
+# mode vel deg dur 
+#
+# equivalent to rosservice call /autojoy -- A 2 90 10
+# characterfield sizes for the command parameters to be passed
+#-...-...-...  
+# point turns at different velocities
+X  10  0   10
+X  10  0   10
+X  10  0   10
+X  10  0   10
+X  10  0   10
+X  20  0   10
+X  20  0   10
+X  20  0   10
+X  20  0   10
+X  20  0   10
+X  25  0   10
+X  25  0   10
+X  25  0   10
+X  25  0   10
+X  25  0   10
