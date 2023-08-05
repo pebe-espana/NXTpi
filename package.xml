@@ -7,7 +7,7 @@
   <maintainer email="pebe.espana@posteo.eu">PeterBreger</maintainer>
   <license>GPLv3</license>
   <url type="website">https://github.com/pebe-espana/NXTpi</url>
-  <author email="pebe-espana">PeterBreger</author>
+  <author email="pebe.espana@posteo.eu">PeterBreger</author>
 
   <build_depend>message_generation</build_depend>
   <exec_depend>message_runtime</exec_depend>
