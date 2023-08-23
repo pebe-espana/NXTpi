@@ -2,7 +2,11 @@
 
 ### Pilot = text based piloting functionality (additional to the existing methods of using webinterface or joystick)
 
-How to implement: Add and replace files in the respective folders of ESA ExoMy_Software, then rerun "sh run_exomy.sh -a"
+How to implement: 
+
+Add and replace above files in the respective folders of ESA ExoMy_Software, then rerun "sh run_exomy.sh -a"
+Remember to add the folders 'action' and 'srv' when adding files, as these activate ROS-actions and ROS-service capabilities.
+Also make sure that CMakeLists.txt and package.xml have been replaced.
 
 Notes:
 
